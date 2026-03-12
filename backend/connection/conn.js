@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const conn = async (req, res) => {
+const conn = async () => {
   try {
     await mongoose
       .connect(
@@ -9,7 +9,7 @@ const conn = async (req, res) => {
         console.log("connected to db");
       });
   } catch (error) {
-    res.statur(400).json({ message: "Not connected " });
+    console.log(error);
   }
 };
 conn();
