@@ -1,6 +1,8 @@
 // 11:30
 import React from "react";
 import "./Navbar.css";
+import { GiWhiteBook } from "react-icons/gi";
+
 
 const Navbar = () => {
   return (
@@ -8,7 +10,10 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <b>TODO </b>
+            <b>
+              <GiWhiteBook />
+              todo{" "}
+            </b>
           </a>
 
           <button
@@ -25,42 +30,39 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item mx-2">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item mx-2">
                 <a className="nav-link active" aria-current="page" href="#">
                   About Us
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item mx-2">
                 <a className="nav-link active" aria-current="page" href="#">
+                  todo
+                </a>
+              </li>
+
+              <li className="nav-item mx-2">
+                <a className="nav-link active btn-nav" aria-current="page" href="#">
                   Sign Up
                 </a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+              <li className="nav-item mx-2">
+                <a className="nav-link active btn-nav" aria-current="page" href="#">
                   Sign In
                 </a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+              <li className="nav-item mx-2">
+                <a className="nav-link active btn-nav" aria-current="page" href="#">
                   Log Out
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#" >
-                 <img 
-                 className="img-fluid user-png" 
-                 src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png"
-                  alt="/" />
                 </a>
               </li>
             </ul>
