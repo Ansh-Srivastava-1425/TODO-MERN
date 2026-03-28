@@ -18,11 +18,13 @@
     display: none;
 }
 
-.btn{
-     border: none;
+.my-btn{
+  border: none;
   outline: none;
   background-color: rgba(255, 0, 0, 0.836);
   border-radius: 5px;
-  color: white !important;
+  color: white;
   font-weight: bold;
 }
+
+        
